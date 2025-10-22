@@ -25,7 +25,7 @@ class Nakama {
 
         // ep4
         const trace = false;
-        this.socket = this.client.createSocket(this.useSSL, trace);
+        this.socket = this.client.createSocket(useSSL, trace);
         await this.socket.connect(this.session);
 
     }
