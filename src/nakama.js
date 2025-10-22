@@ -10,7 +10,8 @@ class Nakama {
     }
 
     async authenticate() {
-        this.client = new Client("defaultkey", "6j75ftk5-7350.use.devtunnels.ms", "443", true);
+        const useSSL = true
+        this.client = new Client("defaultkey", "6j75ftk5-7350.use.devtunnels.ms", "443", useSSL);
         // this.client.ssl = true;
 
         let deviceId = localStorage.getItem("deviceId");
